@@ -1,3 +1,5 @@
+// Stock Market Portfolio App
+// Credit: John Elder, PacktPub, Build a Stock Market App with Node
 const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
