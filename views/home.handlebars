@@ -1,4 +1,79 @@
-      <h1>Stock Market App from handlebars</h1>
-      <p>Stock market....text about me....</p>
-      <p>or something else...really..and now on GH !</p>
-      
+<br/>
+<div class="jumbotron">
+  <h1 class="display-4">{{stockinfo.companyName}} ({{stockinfo.symbol}})</h1>
+  <hr class="my-4">
+<strong>Latest Price: </strong>{{stockinfo.latestPrice}}<br/>
+<strong>Previous Close: </strong>${{stockinfo.previousClose}}<br/>
+<strong>Percent Change: </strong>{{stockinfo.changePercent}}%<br/>
+<strong>Market Cap: </strong>${{stockinfo.marketCap}}<br/>
+<strong>Year to Date Change: </strong>{{stockinfo.ytdChange}}%<br/>
+<strong>52 Week High: </strong>${{stockinfo.week52High}}<br/>
+<strong>52 Week Low: </strong>${{stockinfo.week52Low}}<br/>
+</div>
+
+<!--
+
+avgTotalVolume | 35587729
+calculationPrice | close
+change | 8.65
+changePercent | 0.04162
+close | 216.49
+closeSource | official
+closeTime | 1647633601023
+companyName | Meta Platforms Inc - Class A
+currency | USD
+delayedPrice | 216.48
+delayedPriceTime | 1647633569557
+extendedChange | -0.14
+extendedChangePercent | -0.00065
+extendedPrice | 216.35
+extendedPriceTime | 1647647999018
+high | 216.8
+highSource | 15 minute delayed price
+highTime | 1647633664218
+iexAskPrice |
+iexAskSize |
+iexBidPrice |
+iexBidSize |
+iexClose | 216.59
+iexCloseTime | 1647633599426
+iexLastUpdated |
+iexMarketPercent |
+iexOpen | 206.58
+iexOpenTime | 1647610200424
+iexRealtimePrice |
+iexRealtimeSize |
+iexVolume |
+lastTradeTime | 1647633599724
+latestPrice | 216.49
+latestSource | Close
+latestTime | March 18, 2022
+latestUpdate | 1647633601023
+latestVolume | 52127982
+low | 206
+lowSource | 15 minute delayed price
+lowTime | 1647610202321
+marketCap | 617862487711
+oddLotDelayedPrice | 216.412
+oddLotDelayedPriceTime | 1647633558310
+open | 207.01
+openTime | 1647610202199
+openSource | official
+peRatio | 15.72
+previousClose | 207.84
+previousVolume | 29499681
+primaryExchange | NASDAQ
+symbol | FB
+volume | 52127982
+week52High | 384.33
+week52Low | 185.82
+ytdChange | -0.3147349873643527
+isUSMarketOpen | false
+-->
+<!--
+<p>
+{{#each stockinfo}}
+      {{@key}} | {{this}}<br/>
+{{/each}}
+</p>
+-->   
